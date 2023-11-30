@@ -11,7 +11,7 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="{% url 'ContractEmployee:employee_detail' pk=1 %}"
+             
                 class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                 aria-current="page">Dashboard</a>
               </div>
@@ -119,6 +119,8 @@
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">HPCL CONTRACT EMPLOYEE</h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">Welcome to the World of HPCL</p>
+        <br>
+        <h1 class="mt-2 text-lg leading-8 text-gray-600 sm:text-4xl">SALARY DETAILS</h1>
       </div>
       <form method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
         {% csrf_token %}
@@ -130,21 +132,21 @@
           </div>
         </div>
         <div>
-          <label for="basic_salary" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>
+          <label for="basic_salary" class="block text-sm font-semibold leading-6 text-gray-900">Basic Salary</label>
           <div class="mt-2.5">
             <input type="text" name="basic_salary" id="basic_salary" autocomplete="family-name"
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="allowances" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+          <label for="allowances" class="block text-sm font-semibold leading-6 text-gray-900">allowances</label>
           <div class="mt-2.5">
             <input type="text" name="allowances" id="org_name" autocomplete="allowances"
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="deductions" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+          <label for="deductions" class="block text-sm font-medium text-gray-700">deductions</label>
 
           <div class="mt-2.5">
             <input type="text" name="deductions" id="deductions"
@@ -164,7 +166,7 @@
           </div>
         </div> -->
         <div class="sm:col-span-2">
-          <label for="net_salary" class="block text-sm font-medium text-gray-700">Designation</label>
+          <label for="net_salary" class="block text-sm font-medium text-gray-700">Net Salary</label>
           <div class="mt-2.5">
             <input type="text" name="net_salary" id="net_salary"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">

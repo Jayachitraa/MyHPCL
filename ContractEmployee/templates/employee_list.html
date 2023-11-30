@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Employees</title>
+</head>
+<body>
+    <h1>List Employees</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.emp_name }} - <a href="{% url 'employee_update' employee.emp_code %}">Edit</a> | <a href="{% url 'employee_delete' employee.emp_code %}">Delete</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'employee_create' %}">Create Employee</a>
+</body>
+</html>

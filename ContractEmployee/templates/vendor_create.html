@@ -11,7 +11,7 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="{% url 'ContractEmployee:employee_detail' pk=1 %}"
+          
                 class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                 aria-current="page">Dashboard</a>
               </div>
@@ -118,94 +118,98 @@
       </div>
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">HPCL CONTRACT EMPLOYEE</h2>
+     
         <p class="mt-2 text-lg leading-8 text-gray-600">Welcome to the World of HPCL</p>
+        <br>
+        <h1 class="mt-2 text-lg leading-8 text-gray-600 sm:text-4xl">VENDOR DETAILS</h1>
       </div>
+  
       <form method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
         {% csrf_token %}
         <div>
-          <label for="salary_id" class="block text-sm font-semibold leading-6 text-gray-900">Employee Id</label>
+          <label for="ven_code" class="block text-sm font-semibold leading-6 text-gray-900">Vendor Code</label>
           <div class="mt-2.5">
-            <input type="text" name="salary_id" id="salary_id" autocomplete="given-name"
+            <input type="text" name="ven_code" id="ven_code" autocomplete="given-name"
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div>
-          <label for="basic_salary" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>
+          <label for="ven_name" class="block text-sm font-semibold leading-6 text-gray-900">Vendor Name</label>
           <div class="mt-2.5">
-            <input type="text" name="basic_salary" id="basic_salary" autocomplete="family-name"
+            <input type="text" name="ven_name" id="ven_name" autocomplete="family-name"
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="allowances" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+          <label for="ven_addr1" class="block text-sm font-semibold leading-6 text-gray-900">Vendor Add1</label>
           <div class="mt-2.5">
-            <input type="text" name="allowances" id="org_name" autocomplete="allowances"
+            <input type="text" name="ven_addr1" id="ven_addr1" autocomplete="organization"
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="deductions" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+          <label for="ven_addr2" class="block text-sm font-medium text-gray-700">Vendor Add1</label>
 
           <div class="mt-2.5">
-            <input type="text" name="deductions" id="deductions"
+            <input type="text" name="ven_addr2" id="ven_addr2"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50" required>
           </div>
         </div>
         <!-- <div class="sm:col-span-2">
-          <label for="quali" class="block text-sm font-medium text-gray-700">Qualification</label>
-          <div class="mt-2.5">
-            <select name="quali" id="quali"
+          <label for="ven_addr3" class="block text-sm font-medium text-gray-700">Qualification</label> -->
+          <!-- <div class="mt-2.5"> -->
+            <!-- <select name="ven_addr3" id="ven_addr3"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50" required>
               <option value="skilled">Skilled</option>
               <option value="unskilled">Unskilled</option>
               <option value="semiskilled">Semi Skilled</option>
               <option value="highly_skilled">Highly Skilled</option>
-            </select>
-          </div>
-        </div> -->
+            </select> -->
+          <!-- </div> -->
+        <!-- </div> -->
         <div class="sm:col-span-2">
-          <label for="net_salary" class="block text-sm font-medium text-gray-700">Designation</label>
+          <label for="ven_mob" class="block text-sm font-medium text-gray-700">Vendor Mobile</label>
           <div class="mt-2.5">
-            <input type="text" name="net_salary" id="net_salary"
+            <input type="text" name="ven_mob" id="ven_mob"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="ven_email" class="block text-sm font-medium text-gray-700">Vendor Email</label>
+          <div class="mt-2.5">
+            <input type="text" name="ven_email" id="ven_email"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="ven_adhar" class="block text-sm font-medium text-gray-700">Vendor Adhar</label>
+          <div class="mt-2.5">
+            <input type="text" name="ven_adhar" id="ven_adhar"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
           </div>
         </div>
         <!-- <div class="sm:col-span-2">
-          <label for="ven_code" class="block text-sm font-medium text-gray-700">Vendor Code</label>
-          <div class="mt-2.5">
-            <input type="text" name="ven_code" id="ven_code"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="basic" class="block text-sm font-medium text-gray-700">Basic</label>
-          <div class="mt-2.5">
-            <input type="text" name="basic" id="basic"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
-          </div>
-        </div>
-        <div class="sm:col-span-2">
           <label for="doj" class="block text-sm font-medium text-gray-700">Date of Joining</label>
 
           <div class="mt-2.5">
             <input type="date" name="doj" id="doj"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
           </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="gender" class="block text-sm font-medium text-gray-700">Gender</label>
-          <select name="gender" id="gender"
+        </div> -->
+        <!-- <div class="sm:col-span-2">
+          <label for="ven_bank_det" class="block text-sm font-medium text-gray-700">Gender</label>
+          <select name="ven_bank_det" id="ven_bank_det"
             class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="others">Others</option>
           </select>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="add1" class="block text-sm font-medium text-gray-700">Address Line 1</label>
+        </div> -->
+        <!-- <div class="sm:col-span-2">
+          <label for="ven_bank_det" class="block text-sm font-medium text-gray-700">Address Line 1</label>
 
           <div class="mt-2.5">
-            <input type="text" name="add1" id="add1"
+            <input type="text" name="ven_bank_det" id="ven_bank_det"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
           </div>
         </div>
@@ -247,9 +251,9 @@
             <input type="text" name="esic_location" id="esic_location"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
           </div>
-        </div>
+        </div> -->
 
-        <div class="sm:col-span-2">
+        <!-- <div class="sm:col-span-2">
           <label for="mob" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
           <div class="relative mt-2.5">
             <div class="absolute inset-y-0 left-0 flex items-center">
@@ -271,7 +275,7 @@
             <input type="tel" name="mob" id="mob" autocomplete="tel"
               class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
-        </div> -->
+         </div> -->
           <div class="mt-10">
           <button type="submit"
             class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">submit</button>
